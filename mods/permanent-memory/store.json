@@ -1,0 +1,11 @@
+{
+  "id": "permanent-memory",
+  "name": "Permanent Memory",
+  "version": "1.0.0",
+  "author": "CF AI Chat Team",
+  "description": "Gives the AI permanent memory - save, delete, update and list memories. All memories are automatically appended to the system prompt. Simple assistant prompt in core + memory via mod.",
+  "tags": ["memory", "productivity", "assistant"],
+  "permissions": ["storage", "systemPrompt", "tools", "config", "events", "logger"],
+  "modApiVersion": "1.0.0",
+  "thumbnail": "thumbnail.png"
+}
