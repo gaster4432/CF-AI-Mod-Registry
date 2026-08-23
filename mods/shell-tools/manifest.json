@@ -1,0 +1,11 @@
+{
+  "id": "shell-tools",
+  "name": "Shell & Read Tools",
+  "version": "1.0.0",
+  "author": "CF AI Chat Team",
+  "description": "Gives the AI shell execution and file reading tools. Use with caution.",
+  "modApiVersion": "1.0.0",
+  "main": "index.js",
+  "permissions": ["tools", "logger", "shell", "fs", "events"],
+  "dependencies": {}
+}

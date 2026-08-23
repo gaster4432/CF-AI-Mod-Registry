@@ -1,0 +1,11 @@
+{
+  "id": "shell-tools",
+  "name": "Shell & Read Tools",
+  "version": "1.0.0",
+  "author": "CF AI Chat Team",
+  "description": "Gives the AI shell execution and file reading tools. Use with caution - allows AI to run commands and read files.",
+  "tags": ["shell", "system", "tools", "developer"],
+  "permissions": ["tools", "shell", "fs", "logger", "events"],
+  "modApiVersion": "1.0.0",
+  "thumbnail": "thumbnail.png"
+}
