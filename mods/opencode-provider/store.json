@@ -1,0 +1,11 @@
+{
+  "id": "opencode-provider",
+  "name": "OpenCode Provider",
+  "version": "1.0.0",
+  "author": "CF AI Chat Team",
+  "description": "Provides OpenCode models as chat providers - spawns opencode serve on random high port, waits for serving, lists models and registers them. Supports streaming. Default models like big-pickle included.",
+  "tags": ["provider", "opencode", "models", "streaming"],
+  "permissions": ["providers", "models", "storage", "logger", "events", "config"],
+  "modApiVersion": "1.0.0",
+  "thumbnail": "thumbnail.png"
+}

@@ -7,6 +7,10 @@
     {
       "id": "shell-tools",
       "path": "mods/shell-tools/store.json"
+    },
+    {
+      "id": "opencode-provider",
+      "path": "mods/opencode-provider/store.json"
     }
   ]
 }
