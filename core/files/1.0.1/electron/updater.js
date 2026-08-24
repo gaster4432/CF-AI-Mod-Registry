@@ -108,7 +108,8 @@ async function checkForUpdates() {
     info('updater', `no update metadata reachable (${e.message})`);
     return;
   }
-  if (!meta || typeof meta.latest !== 'string' || !Array.isArray(meta.files)) {
+  if (!meta || typeof meta.latest !== 'string'
+    || (!Array.isArray(meta.files) && !Array.isArray(meta.fullFiles))) {
     warn('updater', 'malformed updates.json - ignoring');
     return;
   }
@@ -133,8 +134,23 @@ async function startUpdate() {
       meta = JSON.parse((await fetchBuffer(UPDATES_URL)).toString('utf8'));
       cachedMeta = meta;
     }
-    if (!meta || typeof meta.latest !== 'string' || !Array.isArray(meta.files)) {
+    if (!meta || typeof meta.latest !== 'string') {
       throw new Error('malformed updates.json');
+    }
+
+    // Delta only applies cleanly when coming from its exact base version;
+    // anything else takes the full-file path.
+    const current = app.getVersion();
+    const useDelta = typeof meta.deltaFrom === 'string' && semverCompare(current, meta.deltaFrom) === 0;
+    let entries;
+    if (useDelta) {
+      info('updater', `delta path: ${meta.deltaFrom} -> ${meta.latest}`);
+      entries = meta.files || [];
+    } else if (Array.isArray(meta.fullFiles) && meta.fullFiles.length) {
+      info('updater', `full path: ${current} -> ${meta.latest} (${meta.fullFiles.length} files)`);
+      entries = meta.fullFiles;
+    } else {
+      throw new Error(`no applicable update path from ${current} (deltaFrom: ${meta.deltaFrom || 'none'})`);
     }
 
     // Phase 1: download everything to staging, verify hashes. Touch nothing yet.
@@ -143,7 +159,7 @@ async function startUpdate() {
     fs.mkdirSync(tmpBase, { recursive: true });
 
     const jobs = [];
-    for (const entry of meta.files) {
+    for (const entry of entries) {
       if (entry.type === 'installer') {
         jobs.push({ type: 'installer', url: entry.url });
         continue;

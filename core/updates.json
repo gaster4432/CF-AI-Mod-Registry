@@ -1,16 +1,17 @@
 {
   "latest": "1.0.1",
-  "notes": "Updater pipeline test - version bump + updater state-recovery fix.",
+  "deltaFrom": "1.0.0",
+  "notes": "Updater pipeline test - version bump + updater fixes (state recovery, full-file path support).",
   "files": [
     {
       "path": "package.json",
       "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/files/1.0.1/package.json",
-      "sha256": "f29ca9ba69e785b084bdf415ee1df2ae835340a614f592e0f38687d17fe8fe43"
+      "sha256": "301f8c6c5d04af496821b78e904901e4a35eee1f9def8fab7de3eb2b744ccdb6"
     },
     {
       "path": "electron/updater.js",
       "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/files/1.0.1/electron/updater.js",
-      "sha256": "8e8e1d8b01c8122dd0b6ce00a9e58b52350113b72afc1f1123a8c53b6181f128"
+      "sha256": "98f07a6825d6f7d989690f417e88f12fbb99d2f1b5293ee98fa35906bc3e9a5d"
     }
   ]
 }
