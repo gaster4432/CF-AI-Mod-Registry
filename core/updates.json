@@ -6,7 +6,7 @@
     {
       "path": "package.json",
       "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/files/1.0.1/package.json",
-      "sha256": "301f8c6c5d04af496821b78e904901e4a35eee1f9def8fab7de3eb2b744ccdb6"
+      "sha256": "f29ca9ba69e785b084bdf415ee1df2ae835340a614f592e0f38687d17fe8fe43"
     },
     {
       "path": "electron/updater.js",
