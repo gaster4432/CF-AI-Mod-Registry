@@ -1,0 +1,19 @@
+{
+  "name": "pkax",
+  "productName": "Pkax",
+  "version": "1.0.0",
+  "description": "Production-quality desktop chat app powered by Cloudflare Workers AI — vision, image generation, web search, and local MCP tool support.",
+  "main": "electron/main.js",
+  "author": "archl",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "dompurify": "^3.2.0",
+    "highlight.js": "^11.11.0",
+    "marked": "^15.0.0"
+  },
+  "allowScripts": {
+    "electron@33.4.11": true,
+    "esbuild@0.24.2": true
+  }
+}
