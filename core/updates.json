@@ -1,159 +1,17 @@
 {
-  "latest": "1.2.0",
-  "notes": "...",
-  "deltaFrom": "1.1.0",
+  "latest": "1.0.2",
+  "deltaFrom": "1.0.1",
+  "notes": "Fix: version now read from install package.json instead of exe metadata (stops repeated restart prompts).",
   "files": [
     {
-      "path": "electron/main.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/files/1.2.0/electron/main.js",
-      "sha256": "cda041904770db0e4710dfd87ea58421184f7b85e3e115f0cde0aded51a330b7"
-    },
-    {
-      "path": "renderer/bundle.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/files/1.2.0/renderer/bundle.js",
-      "sha256": "880a7c9fc7ae241f500c74394250a4db4c9c65e039e331225b15e0897693328c"
-    }
-  ],
-  "fullFiles": [
-    {
-      "path": "electron/appdata.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/appdata.js",
-      "sha256": "ad6466bbccd7258ff05509fe11a34761577006fa4eeb5f57390b0242aba40a46"
-    },
-    {
-      "path": "electron/cf-client.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/cf-client.js",
-      "sha256": "6918c55760e0d6521a44ed5e835a71915356d9c85cc27a4f9eaef272578dbb4d"
-    },
-    {
-      "path": "electron/chat-engine.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/chat-engine.js",
-      "sha256": "4e825a28ee4ed6f9615b2270bee93671e0d425a04cf50c54e2c0bd560a2dcc12"
-    },
-    {
-      "path": "electron/config.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/config.js",
-      "sha256": "68d1aab4003a739a7512c600ff838ac1fe9798bf3e97ba34e40ddbcb49ffa41a"
-    },
-    {
-      "path": "electron/logger.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/logger.js",
-      "sha256": "b4c50cbad1029662e64dc3591927c1ffc878970aadbf4b9cf364fb4c87057c36"
-    },
-    {
-      "path": "electron/main.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/main.js",
-      "sha256": "cda041904770db0e4710dfd87ea58421184f7b85e3e115f0cde0aded51a330b7"
-    },
-    {
-      "path": "electron/mcp-manager.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/mcp-manager.js",
-      "sha256": "9703d57ff35685d42758fd0ff8a52886c2ad530d552719613654e839ba6c849a"
-    },
-    {
-      "path": "electron/mcp-oauth.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/mcp-oauth.js",
-      "sha256": "950d296aff3327e4fceca8964babbca9808bc7fbed13ddb9e459524c8bd0a878"
-    },
-    {
-      "path": "electron/models.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/models.js",
-      "sha256": "62eebe10734fb1854cd25480fbed1e98a96b7bc02b2c3b52c0e34df5f8493e88"
-    },
-    {
-      "path": "electron/mods/api.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/mods/api.js",
-      "sha256": "908a27ebbee371350f4aea314948f918c1904dbed5cb3b528ad2a4dc60da3de1"
-    },
-    {
-      "path": "electron/mods/config.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/mods/config.js",
-      "sha256": "7a8249422ecde3fab0962933b76bb1f2a5f70d46de3e43f188a0a322f8ed375f"
-    },
-    {
-      "path": "electron/mods/events.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/mods/events.js",
-      "sha256": "e24f6aa34a18b67bb1e19ecb87217e8832ada942badce4525be70606a9bf1d74"
-    },
-    {
-      "path": "electron/mods/loader.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/mods/loader.js",
-      "sha256": "b1c2d6841d3e09a63712e9c1981375bc28ff2757c466f3ad9176f7e011724321"
-    },
-    {
-      "path": "electron/mods/manifest.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/mods/manifest.js",
-      "sha256": "926b61d17ea607a7184a47486f5dfa3c6faf1971afd9f49962dfb8c30b322e61"
-    },
-    {
-      "path": "electron/mods/providers.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/mods/providers.js",
-      "sha256": "cae5fd5a612df387c03828333456b45cb091c4ed1d5dddafc79a90a350ab1ffc"
-    },
-    {
-      "path": "electron/mods/storage.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/mods/storage.js",
-      "sha256": "e840e069574867380af9bcf972385fcd619b6b80df37f40603d338c4717237e0"
-    },
-    {
-      "path": "electron/mods/system-prompt.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/mods/system-prompt.js",
-      "sha256": "f28e8c7967932e82013bd736f8910e02cc7de09ebff9b5de059c3fea39c3c2e2"
-    },
-    {
-      "path": "electron/mods/tools.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/mods/tools.js",
-      "sha256": "32e7a02ac7c84eed8a621a80a73118b4f424a622abf6c5f341738a2a21635618"
-    },
-    {
-      "path": "electron/preload.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/preload.js",
-      "sha256": "4ab761febc11ff83cec93b06ece6c88fb3340495d285ea68a73b03eed03d0083"
+      "path": "package.json",
+      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/files/1.0.2/package.json",
+      "sha256": "24467db17257a841b5b8ae25ad1e368f927eb0ad75da15ef277b79fff64e0a8b"
     },
     {
       "path": "electron/updater.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/updater.js",
-      "sha256": "98f07a6825d6f7d989690f417e88f12fbb99d2f1b5293ee98fa35906bc3e9a5d"
-    },
-    {
-      "path": "electron/websearch.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/electron/websearch.js",
-      "sha256": "43c41e3f708b7aa591cb63e9c2d556df106dea411275e3e9bab3d03ab3726a5c"
-    },
-    {
-      "path": "icon.ico",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/icon.ico",
-      "sha256": "adc61e983e4982b16ba9473d7d513516348a427c8327b515806bfbe4e2580837"
-    },
-    {
-      "path": "package.json",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/package.json",
-      "sha256": "a10e1e7227d2079e804ed35350f1b0174e9604ca4a2dfb168d3f17b0413e149f"
-    },
-    {
-      "path": "renderer/app.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/renderer/app.js",
-      "sha256": "872ff535b5eba43cc17890d597bbc9791ae4c110ce754b5cf93dd3436a7ea678"
-    },
-    {
-      "path": "renderer/bundle.css",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/renderer/bundle.css",
-      "sha256": "bf0852b74b5c3100dc99c9ed712927130f03b16e2ca61709651d37ed11d7625f"
-    },
-    {
-      "path": "renderer/bundle.js",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/renderer/bundle.js",
-      "sha256": "880a7c9fc7ae241f500c74394250a4db4c9c65e039e331225b15e0897693328c"
-    },
-    {
-      "path": "renderer/index.html",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/renderer/index.html",
-      "sha256": "7668a76f16709b1ad69598b55304f318b97175d1bc703afc2962167881b71619"
-    },
-    {
-      "path": "renderer/styles.css",
-      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/full/1.2.0/renderer/styles.css",
-      "sha256": "69ffccda37bbfd08e38e95192d7861cf6d5dcca4163c2e7bce00c0c38940ede9"
+      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/files/1.0.2/electron/updater.js",
+      "sha256": "b6a140a07b4f1b86e61b6f9ed70b0994c6f6d05e7ba2cb713f8f28b75559826e"
     }
   ]
 }
