@@ -1,0 +1,11 @@
+{
+  "latest": "1.0.1",
+  "notes": "Updater pipeline test - version bump only.",
+  "files": [
+    {
+      "path": "package.json",
+      "url": "https://raw.githubusercontent.com/gaster4432/CF-AI-Mod-Registry/main/core/files/1.0.1/package.json",
+      "sha256": "f29ca9ba69e785b084bdf415ee1df2ae835340a614f592e0f38687d17fe8fe43"
+    }
+  ]
+}
